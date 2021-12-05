@@ -1,5 +1,8 @@
 const fs = require("fs");
-const input = fs.readFileSync("./input.txt").toString("utf8").split("\n");
+const input = fs
+	.readFileSync(__dirname + "./input.txt")
+	.toString("utf8")
+	.split("\n");
 
 let horizontal = 0;
 let depth = 0;
